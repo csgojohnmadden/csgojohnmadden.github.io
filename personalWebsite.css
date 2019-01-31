@@ -66,13 +66,14 @@ footer{
   color: hsla(130, 45%, 36%, 1);
   border-radius: 5px;
 }
-#fetch-info{
-  display: inline-block;
-  background-color: grey;
+.fetch-info{
+
   height: 525px;
   width: 550px;
   margin-top: 15px;
   text-align: center;
+  position: absolute;
+  margin-left: 50px;
 }
 #title{
   height: 50px;
@@ -115,6 +116,27 @@ footer{
 #tab-p{
   font-weight: 600;
   font-size: 18px;
+}
+
+#home-box{
+  opacity: 1;
+  transition: all 1s cubic-bezier(0, 0, 0, 1);
+}
+#resume-box{
+  opacity: 0;
+  transition: all 1s cubic-bezier(0, 0, 0, 1);
+}
+#skill-box{
+  opacity: 0;
+  transition: all 1s cubic-bezier(0, 0, 0, 1);
+}
+#port-box{
+  opacity: 0;
+  transition: all 1s cubic-bezier(0, 0, 0, 1);
+}
+#contact-box{
+  opacity: 0;
+  transition: all 1s cubic-bezier(0, 0, 0, 1);
 }
 /***************END of Center Style****************/
 

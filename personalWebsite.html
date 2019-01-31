@@ -3,6 +3,7 @@
   <head>
 
     <link rel="stylesheet" type="text/css" href="personalWebsite.css">
+    <script type = "text/javascript" src="personalWebsite.js"></script>
 
 
     <script id = "ajax-menu">
@@ -27,25 +28,152 @@
     <div class = "row">
       <!––************ LEFT COLUMN *****************-->
       <div id = "l_col" class = "column">
-        <button class = "menu_item" onclick="ajaxRequest( 'home.html', getContent ) ; return false ;" onload="ajaxRequest( 'home.html', getContent ) ; return false ;">
-          <div id = "m_item">HOME</div>
+        <button class = "menu_item" onclick = "changeSelectionHome()">
+          <div id = "m_item" onclick = "ajaxRequest( 'home.html', getContent ) ; return false ;">HOME</div>
         </button>
-        <button class = "menu_item" onclick="ajaxRequest( 'resume.html', getContent ) ; return false ;">
+        <button class = "menu_item" onclick = "changeSelectionResume()">
           <div id = "m_item">RESUME</div>
         </button>
-        <button class = "menu_item" onclick="ajaxRequest( 'skills.html', getContent ) ; return false ;">
+        <button class = "menu_item" onclick = "changeSelectionSkill()">
           <div id = "m_item">SKILLS</div>
         </button>
-        <button class = "menu_item" onclick="ajaxRequest( 'portfolio.html', getContent ) ; return false ;">
+        <button class = "menu_item" onclick = "changeSelectionPort()">
           <div id = "m_item">PORTFOLIO</div>
         </button>
-        <button class = "menu_item"onclick="ajaxRequest( 'contact.html', getContent ) ; return false ;">
+        <button class = "menu_item" onclick = "changeSelectionContact()">
           <div id = "m_item">CONTACT</div>
         </button>
       </div>
       <!––************ CENTER COLUMN *****************-->
       <div id = "c_col" class = "column">
+
         <div class = "fetch-box">
+          <!-- Home -->
+          <div class = "fetch-info" id = "home-box">
+            <div id = "title">
+              Home
+            </div>
+            <div id = "line">
+            </div>
+            <div id = "download-button">
+              Download
+            </div>
+            <div id = "tab-info">
+              <p id = "tab-p">This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+              </p>
+            </div>
+          </div>
+          <!-- Resume -->
+          <div class =  "fetch-info" id = "resume-box" opacity = 0;>
+            <div id = "title">
+              Resume
+            </div>
+            <div id = "line">
+            </div>
+            <div id = "download-button">
+              Download
+            </div>
+            <div id = "tab-info">
+              <p id = "tab-p">This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+              </p>
+            </div>
+          </div>
+          <!-- Skills -->
+          <div class =  "fetch-info" id = "skill-box">
+            <div id = "title">
+              Skills
+            </div>
+            <div id = "line">
+            </div>
+            <div id = "download-button">
+              Download
+            </div>
+            <div id = "tab-info">
+              <p id = "tab-p">This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+              </p>
+            </div>
+          </div>
+          <!-- Portfolio -->
+          <div class = "fetch-info" id = "port-box">
+            <div id = "title">
+              Portfolio
+            </div>
+            <div id = "line">
+            </div>
+            <div id = "download-button">
+              Link
+            </div>
+            <div id = "tab-info">
+              <p id = "tab-p">This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+              </p>
+            </div>
+          </div>
+          <!-- Contact -->
+          <div class = "fetch-info" id = "contact-box" opacity = 0;>
+            <div id = "title">
+              Contact
+            </div>
+            <div id = "line">
+            </div>
+            <div id = "download-button">
+              Email
+            </div>
+            <div id = "tab-info">
+              <p id = "tab-p">This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+                This is where all the information would go.  So this is just filler for the moment.
+              </p>
+            </div>
+          </div>
+
 
         </div>
 
@@ -65,9 +193,9 @@
           <div id ="icon-box">
             <img id = "icon" src="fb_icon.png" alt="FB_ICON">
             <img id = "icon" src="insta_icon.png" alt="INSTA_ICON">
-            <img id = "icon" src="twitter.png" alt="TW_ICON">
+            <img id = "icon" src="twitter.png" alt="TW_ICON" onclick = "location.href='https://twitter.com/csgojohnmadden'">
             <img id = "icon" src="linkedin_icon.png" alt="LK_ICON">
-            <img id = "icon" src="youtube_icon.png" alt="YT_ICON">
+            <img id = "icon" src="youtube_icon.png" alt="YT_ICON" onclick = "location.href='https://www.youtube.com/channel/UCw3c43dbUHcquEoVtz7oHXA/featured?view_as=public'">
           </div>
 
         </div>
