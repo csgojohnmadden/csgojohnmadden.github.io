@@ -67,7 +67,6 @@ footer{
   border-radius: 5px;
 }
 .fetch-info{
-
   height: 525px;
   width: 550px;
   margin-top: 15px;
@@ -121,22 +120,27 @@ footer{
 #home-box{
   opacity: 1;
   transition: all 1s cubic-bezier(0, 0, 0, 1);
+  position: absolute;
 }
 #resume-box{
   opacity: 0;
   transition: all 1s cubic-bezier(0, 0, 0, 1);
+  position: absolute;
 }
 #skill-box{
   opacity: 0;
   transition: all 1s cubic-bezier(0, 0, 0, 1);
+  position: absolute;
 }
 #port-box{
   opacity: 0;
   transition: all 1s cubic-bezier(0, 0, 0, 1);
+  position: absolute;
 }
 #contact-box{
   opacity: 0;
   transition: all 1s cubic-bezier(0, 0, 0, 1);
+  position: absolute;
 }
 /***************END of Center Style****************/
 
