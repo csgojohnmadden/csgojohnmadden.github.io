@@ -4,55 +4,49 @@
 
     <link rel="stylesheet" type="text/css" href="personalWebsite.css">
 
+
+    <script id = "ajax-menu">
+	    ajaxRequest = function( url, callBackFunction ) {
+		   var ajaxObject = new XMLHttpRequest() ;
+		   ajaxObject.open( "GET", url, true ) ;
+		   ajaxObject.send( null ) ;
+		   ajaxObject.onreadystatechange = function() {
+			      if ( ajaxObject.readyState == 4  &&  ajaxObject.status == 200 ) {
+			       callBackFunction( ajaxObject.responseText ) ;
+			       }
+		   }
+      }
+	    getContent = function( contentReturned ) {
+		      document.getElementById( 'fetch-box' ).innerHTML = contentReturned ;
+	    }
+    </script>
+
   </head>
   <body>
 
     <div class = "row">
       <!––************ LEFT COLUMN *****************-->
       <div id = "l_col" class = "column">
-        <div class = "menu_item">
+        <button class = "menu_item" onclick="ajaxRequest( 'home.html', getContent ) ; return false ;" onload="ajaxRequest( 'home.html', getContent ) ; return false ;">
           <div id = "m_item">HOME</div>
-        </div>
-        <div class = "menu_item">
+        </button>
+        <button class = "menu_item" onclick="ajaxRequest( 'resume.html', getContent ) ; return false ;">
           <div id = "m_item">RESUME</div>
-        </div>
-        <div class = "menu_item">
+        </button>
+        <button class = "menu_item" onclick="ajaxRequest( 'skills.html', getContent ) ; return false ;">
           <div id = "m_item">SKILLS</div>
-        </div>
-        <div class = "menu_item">
+        </button>
+        <button class = "menu_item" onclick="ajaxRequest( 'portfolio.html', getContent ) ; return false ;">
           <div id = "m_item">PORTFOLIO</div>
-        </div>
-        <div class = "menu_item">
+        </button>
+        <button class = "menu_item"onclick="ajaxRequest( 'contact.html', getContent ) ; return false ;">
           <div id = "m_item">CONTACT</div>
-        </div>
+        </button>
       </div>
       <!––************ CENTER COLUMN *****************-->
       <div id = "c_col" class = "column">
         <div class = "fetch-box">
-          <div id = "fetch-info">
-            <div id = "title">
-              Title
-            </div>
-            <div id = "line">
-            </div>
-            <div id = "download-button">
-              Download
-            </div>
-            <div id = "tab-info">
-              <p id = "tab-p">This is where all the information would go.  So this is just filler for the moment.
-                This is where all the information would go.  So this is just filler for the moment.
-                This is where all the information would go.  So this is just filler for the moment.
-                This is where all the information would go.  So this is just filler for the moment.
-                This is where all the information would go.  So this is just filler for the moment.
-                This is where all the information would go.  So this is just filler for the moment.
-                This is where all the information would go.  So this is just filler for the moment.
-                This is where all the information would go.  So this is just filler for the moment.
-                This is where all the information would go.  So this is just filler for the moment.
-                This is where all the information would go.  So this is just filler for the moment.
-                This is where all the information would go.  So this is just filler for the moment.
-              </p>
-            </div>
-          </div>
+
         </div>
 
       </div>
